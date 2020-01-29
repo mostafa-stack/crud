@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- Start Links -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/index_style.css">
+</head>
+<body>
+    <div class="container my-5">
+        <div class="form-group">
+            <label for="">Product Name :</label>
+            <input type="text" class="form-control" id="productNameInp" >
+        </div>
+        <div class="form-group">
+            <label for="">Product Price :</label>
+            <input type="text" class="form-control" id="productPriceInp">
+        </div>
+        <div class="form-group">
+            <label for="">Product Category :</label>
+            <input type="text" class="form-control" id="productCategoryInp">
+        </div>
+        <div class="form-group">
+            <label for="">Product Desc :</label>
+            <input type="text" class="form-control" id="productDescInp">
+        </div>
+        <button class="btn btn-info p-2 mb-5" onclick="addProduct()">Add Product</button>
+        <button class="btn btn-info p-2 mb-5" onclick="newUpdate()">New Update</button>
+        <input onkeyup="searchPro(this.value)" type="text" class="form-control  w-50 m-auto " placeholder="Search">
+    <div class="row my-5" id="addOne" class="my-3">
+    
+    </div>
+    </div>
+    
+    <!-- start Scripts -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/first.js"></script>
+</body>
+</html>
