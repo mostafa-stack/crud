@@ -76,30 +76,19 @@ function deletePro(indx) {
 
 
 
-
-/*
-
-function updatePro(index) {
-    var priceVal = proContainer[index].price;
-    console.log(priceVal);
-    return priceVal
-}
-function newUpdate() {
-    var newPriceVal = document.getElementById("productPriceInp").value;
-    updatePro();
-    var  priceVal = newPriceVal  ;
-    console.log(priceVal);
-    
-}
-*/
 function newUpdate() {
     newPriceVal = document.getElementById("productPriceInp").value;
 }
 
 function updatePro(index) {
-    proContainer[index].price = newPriceVal;
-    localStorage.setItem("productsData", JSON.stringify(proContainer));
-    proBody();
+    if (typeof (newPriceVal) == "undefined") {
+        window.alert("input new price then click 'New Update' button then select the product you want to change then click update ")
+    } else {
+        proContainer[index].price = newPriceVal;
+        localStorage.setItem("productsData", JSON.stringify(proContainer));
+        proBody();
+    }
+
 }
 
 
